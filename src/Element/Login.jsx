@@ -7,7 +7,7 @@ function Login() {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/users/login",
+        "https://vast-pear-barnacle-toga.cyclic.app/users/login",
         {
           email,
           password,

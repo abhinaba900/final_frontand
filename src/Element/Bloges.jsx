@@ -5,9 +5,12 @@ function Bloges() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get("http://localhost:3001/posts", {
-          withCredentials: true,
-        });
+        const response = await axios.get(
+          "https://vast-pear-barnacle-toga.cyclic.app/posts",
+          {
+            withCredentials: true,
+          }
+        );
         if (response.status === 200) {
           console.log(response.data);
           setPosts(response.data);

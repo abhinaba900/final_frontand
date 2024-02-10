@@ -9,7 +9,7 @@ function Register() {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/users/register",
+        "https://vast-pear-barnacle-toga.cyclic.app/users/register",
         {
           name,
           email,
